@@ -11,3 +11,16 @@ for($i=1; $i <= 10; $i++){
 }
  echo"</tr>";
 
+ //Mengisi Tabel
+for($i=1; $i <= 10; $i++){
+    echo"<tr>";
+    echo"<td style='background-color:lime;  font-weight: bold;'>$i</td>"; // Kolom bilangan yang ada di samping
+    for($j = 1; $j <= 10; $j++) {
+        echo "<td style='background-color: cyan;'>" . ($i * $j) . "</td>";
+    }
+    echo "</tr>";
+}
+
+echo "</table>";
+
+?>
